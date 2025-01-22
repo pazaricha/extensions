@@ -1,4 +1,6 @@
-export default {
+import { processUrls } from "../utils/urls";
+
+const baseUrls = {
   Utility: [
     {
       url: "https://chakra-ui.com/docs/hooks/use-boolean",
@@ -24,3 +26,5 @@ export default {
     { url: "https://chakra-ui.com/docs/hooks/use-radio-group", title: "useRadioGroup" },
   ],
 };
+
+export default processUrls(baseUrls);

@@ -12,6 +12,13 @@
   "license": "MIT",
   "commands": [
     {
+      "name": "configure",
+      "title": "Configure Extension",
+      "subtitle": "Chakra UI",
+      "description": "Configure Chakra UI documentation version",
+      "mode": "view"
+    },
+    {
       "name": "get-started",
       "title": "Get Started",
       "subtitle": "Chakra UI",
@@ -50,6 +57,32 @@
       ],
       "description": "Hooks of Chakra UI",
       "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "version",
+      "title": "Chakra UI Version",
+      "description": "Specify which version of Chakra UI documentation to use",
+      "label": "Documentation Version",
+      "placeholder": "Select a Chakra UI version",
+      "type": "dropdown",
+      "required": true,
+      "default": "Latest",
+      "data": [
+        {
+          "title": "Latest (no version prefix)",
+          "value": "Latest"
+        },
+        {
+          "title": "Version 2.x",
+          "value": "v2"
+        },
+        {
+          "title": "Version 1.x",
+          "value": "v1"
+        }
+      ]
     }
   ],
   "dependencies": {

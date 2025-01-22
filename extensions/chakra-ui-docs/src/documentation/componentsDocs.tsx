@@ -1,4 +1,6 @@
-export default {
+import { processUrls } from "../utils/urls";
+
+const baseUrls = {
   Layout: [
     {
       url: "https://chakra-ui.com/docs/components/aspect-ratio",
@@ -268,3 +270,5 @@ export default {
     },
   ],
 };
+
+export default processUrls(baseUrls);

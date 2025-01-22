@@ -1,4 +1,6 @@
-export default {
+import { processUrls } from "../utils/urls";
+
+const baseUrls = {
   "Getting Started": [
     {
       url: "https://chakra-ui.com/getting-started",
@@ -22,3 +24,5 @@ export default {
     },
   ],
 };
+
+export default processUrls(baseUrls);

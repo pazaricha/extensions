@@ -1,10 +1,10 @@
 import { ActionPanel, List, Action } from "@raycast/api";
-import GetStartedDocs from "./documentation/hooksDocs";
+import HooksDocs from "./documentation/hooksDocs";
 
 export default function SearchDocumentation() {
   return (
     <List>
-      {Object.entries(GetStartedDocs).map(([section, items]) => (
+      {Object.entries(HooksDocs).map(([section, items]) => (
         <List.Section title={section} key={section}>
           {items.map((item) => (
             <List.Item

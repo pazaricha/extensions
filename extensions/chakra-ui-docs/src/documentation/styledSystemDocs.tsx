@@ -1,4 +1,6 @@
-export default {
+import { processUrls } from "../utils/urls";
+
+const baseUrls = {
   Features: [
     {
       url: "https://chakra-ui.com/docs/styled-system/style-props",
@@ -22,3 +24,5 @@ export default {
     { url: "https://chakra-ui.com/docs/styled-system/advanced-theming", title: "Advanced" },
   ],
 };
+
+export default processUrls(baseUrls);
